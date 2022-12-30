@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="carouselExampleCaptions" class="banner carousel slide">
+          <div class="bannerbtn carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="bannerimg carousel-item active">
+              <img src="img/Banner1.jfif" class="d-block w-100" alt="Banner1" />
+              <div class="bannerinfo carousel-caption d-md-block">
+                <h2>Ma Anh Hoang</h2>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+            <div class="bannerimg carousel-item">
+              <img src="img/Banner2.jfif" class="d-block w-100" alt="Banner2" />
+              <div class="bannerinfo carousel-caption d-md-block">
+                <h2>Ma Anh Hoang</h2>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+            <div class="bannerimg carousel-item">
+              <img src="img/Banner3.jfif" class="d-block w-100" alt="Banner3" />
+              <div class="bannerinfo carousel-caption d-md-block">
+                <h2>Ma Anh Hoang</h2>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="info container">
+          <ul class="row m-0 p-0">
+            <li class="col-md-2 col-sm-3 col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+                color="blue"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+              Thong tin
+            </li>
+            <li class="col-md-2 col-sm-3 col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-journal-text"
+                viewBox="0 0 16 16"
+                color="blue"
+              >
+                <path
+                  d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                />
+                <path
+                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                />
+                <path
+                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                />
+              </svg>
+              Li lich
+            </li>
+            <li class="col-md-4 col-sm-3 col-12 d-md-block d-none">
+              <div data-aos="fade-up">
+                <img id="avata" src="img/avata.png" alt="avata" />
+              </div>
+            </li>
+            <li class="col-md-2 col-sm-3 col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+                color="blue"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                />
+              </svg>
+              chung chi
+            </li>
+            <li class="col-md-2 col-sm-3 col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+                color="blue"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              Du an
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="mtnnttcn container">
+          <div class="mtnn">
+            <h2>Muc tieu nghe nghiep</h2>
+            <br />
+            <p>
+              Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại học A.
+              Tôi đã từng tham gia một số dự án và nghiên cứu về mảng quản trị
+              mạng. Tôi hy vọng sẽ được tham gia vào một vị trí của công ty để
+              ứng dụng các kiến thức đã học vào làm việc. Khi được làm việc với
+              vị trí nhân viên quản trị mạng, tôi sẽ mang những kiến thức và kỹ
+              năng học hỏi được trong học tập vào giải quyết các công việc.
+              Trong quá trình làm việc, tôi sẽ luôn cố gắng tích lũy kinh nghiệm
+              và trau dồi kiến thức cho bản thân để trở thành một người quản trị
+              mạng giỏi.
+            </p>
+          </div>
+          <div class="ttcn">
+            <h2>Thong tin ca nhan</h2>
+            <br />
+            <div><strong>Gioi tinh</strong>: nam</div>
+            <div><strong>Ngay sinh</strong>: 28/12/1998</div>
+            <div><strong>Dien thoai</strong>: (+84) 907136768</div>
+            <div><strong>Gioi tinh</strong>: nam</div>
+            <div><strong>Email</strong>: anhhoang281298@gmail.com</div>
+            <div><strong>Dia chi</strong>: TP HCM</div>
+            <div><strong>Web</strong>: fb.com</div>
+            <a href="https://www.google.com.vn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="blue"
+                class="bi bi-google"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="blue"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="blue"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+            </a>
+            <a href="https://twitter.com/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="blue"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="lylich container">
+          <div class="kinhnghiem">
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-briefcase"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </div>
+            <h2>Kinh Nghiem</h2>
+            <ul>
+              <li>
+                <strong>Full stack Developer - Cong ty X</strong>
+                <p>
+                  6/2021- hien tai<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                </p>
+              </li>
+              <li>
+                <strong>Web Designer - Cong ty Y</strong>
+                <p>
+                  6/2021- hien tai<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="kynang">
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-tools"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"
+                />
+              </svg>
+            </div>
+            <h2>Ky Nang</h2>
+            <ul>
+              <li>
+                <span class="">HTML/CSS: Fundametal</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+              <li>
+                <span>Javacript: Intermediate</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+              <li>
+                <span>Nodejs: Intermediate</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+              <li>
+                <span>Boostrap5: Fundametal</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="ngonngu">
+            <h2>Ngon Ngu</h2>
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-mic"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"
+                />
+              </svg>
+            </div>
+            <ul>
+              <li>
+                <span>Tieng Nhat-JLPT N4</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+              <li>
+                <span>Tieng Anh-IELTS 7.0</span> <br />
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--sucess"></button>
+                <button type="button" class="kynang--btn--unsucess"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="hoatdong">
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-briefcase"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </div>
+            <h2>Hoat Dong</h2>
+            <ul>
+              <li>
+                <strong>FPT Edu hackathon 2019</strong>
+                <p>
+                  03/2019- 05/2019<br />
+                  -Giai 3 bang A<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                </p>
+              </li>
+              <li>
+                <strong>Cau lac bo Z</strong>
+                <p>
+                  08/2016- 08/2019<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="hocvan">
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-pencil"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                />
+              </svg>
+            </div>
+            <h2>Hoc Van</h2>
+            <ul>
+              <li>
+                <strong>NesTech</strong>
+                <p>
+                  06/2021- 05/2022<br />
+                  -GPA: 9/10<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                </p>
+              </li>
+              <li>
+                <strong>Cu nhan-DHFPT</strong>
+                <p>
+                  08/2016- 08/2019<br />
+                  -Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                  học A.<br />
+                  -GPA: 8/10<br />
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="sothich">
+            <div class="lylich--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+                color
+                weight="0.5"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                />
+              </svg>
+            </div>
+            <h2>So thich</h2>
+            <table>
+              <tr>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="blue"
+                    class="bi bi-music-note-beamed"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"
+                    />
+                    <path
+                      d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"
+                    />
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="blue"
+                    class="bi bi-controller"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"
+                    />
+                    <path
+                      d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"
+                    />
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="blue"
+                    class="bi bi-airplane"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"
+                    />
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="blue"
+                    class="bi bi-bag-dash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"
+                    />
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                    />
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td>Am nhac</td>
+                <td>Choi game</td>
+                <td>Du lich</td>
+                <td>Nau an</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container chungchi row">
+          <h2>Chung chi - Giai thuong</h2>
+          <br /><br />
+          <div class="chungchi1 row col-md-6 col-sm-6 col-12">
+            <div class="col-md-6">
+              <img src="img/chungchi.png" alt="chungchi1" />
+            </div>
+            <div class="col-md-6">
+              <h6>Chung chi lap trinh web - NesTech</h6>
+              <span>-Chung chi thuoc chuong trinh CCDN</span><br />
+              <span>-GPA: 8.6</span>
+            </div>
+          </div>
+          <div class="chungchi2 row col-md-6 col-sm-6 col-12">
+            <div class="col-md-6">
+              <img src="img/chungchi.png" alt="chungchi2" />
+            </div>
+            <div class="col-md-6">
+              <h6>Chung chi lap trinh Javacript - NesTech</h6>
+              <span>-Chung chi thuoc chuong trinh CCDN</span><br />
+              <span>-GPA: 8.9</span>
+            </div>
+          </div>
+          <div class="chungchi3 row col-md-6 col-sm-6 col-12">
+            <div class="col-md-6">
+              <img src="img/chungchi.png" alt="chungchi3" />
+            </div>
+            <div class="col-md-6">
+              <h6>Chung chi thiet ke database - NesTech</h6>
+              <span>-Chung chi thuoc chuong trinh CCDN</span><br />
+              <span>-GPA: 8.0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="project container">
+          <div class="project1">
+            <div><img src="img/project_1.png" alt="pro1" /></div>
+            <div class="pro1--cv"><h5>CV ca nhan</h5></div>
+            <div class="pro1--info row">
+              <div class="col-sm-6 col-12">
+                <button type="button" class="btn btn-primary">2021</button>
+              </div>
+              <div class="row col-sm-6 col-12">
+                <div class="col-sm-12 col-12">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                      />
+                    </svg>
+                    NesTech
+                  </span>
+                </div>
+                <div class="col-sm-12 col-12">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                      />
+                      <path
+                        d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                      />
+                    </svg>
+                    Dev
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <td>Mo ta</td>
+                  <td>
+                    Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                    học A.
+                  </td>
+                </tr>
+                <tr>
+                  <td>nhiem vu</td>
+                  <td>Tôi vừa tốt nghiệp</td>
+                </tr>
+                <tr>
+                  <td>cong nghe</td>
+                  <td>HTML, CSS</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="project2">
+            <div><img src="img/project_2.png" alt="pro1" /></div>
+            <div class="pro2--cv"><h5>CV ca nhan</h5></div>
+            <div class="pro2--info">
+              <button type="button" class="btn btn-primary">2021</button>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                NesTech
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-check-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                  />
+                  <path
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                Developer
+              </span>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <td>Mo ta</td>
+                  <td>
+                    Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                    học A.
+                  </td>
+                </tr>
+                <tr>
+                  <td>nhiem vu</td>
+                  <td>Tôi vừa tốt nghiệp</td>
+                </tr>
+                <tr>
+                  <td>cong nghe</td>
+                  <td>HTML, CSS</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="project3">
+            <div><img src="img/project_3.png" alt="pro1" /></div>
+            <div class="pro3--cv"><h5>CV ca nhan</h5></div>
+            <div class="pro3--info">
+              <button type="button" class="btn btn-primary">2021</button>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+                NesTech
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-check-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                  />
+                  <path
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                Developer
+              </span>
+            </div>
+            <div>
+              <table>
+                <tr>
+                  <td>Mo ta</td>
+                  <td>
+                    Tôi vừa tốt nghiệp ngành công nghệ thông tin của trường đại
+                    học A.
+                  </td>
+                </tr>
+                <tr>
+                  <td>nhiem vu</td>
+                  <td>Tôi vừa tốt nghiệp</td>
+                </tr>
+                <tr>
+                  <td>cong nghe</td>
+                  <td>HTML, CSS</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <a href="https://www.facebook.com/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+        </a>
+        <span class="me-3 ms-3">Facebook</span>
+
+        <a href="https://www.linkedin.com/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            />
+          </svg>
+        </a>
+        <span class="me-3 ms-3">Linkedin</span>
+        <a href="https://github.com/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+        </a>
+        <span class="me-3 ms-3">Github</span>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

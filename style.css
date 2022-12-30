@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bannerbtn {
+    margin-bottom: 5rem;
+}
+.banner .bannerimg img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.banner .bannerinfo{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.info ul {
+    list-style-type: none;
+}
+
+.info li {
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    border-left: 0.5px inset gray;
+    border-right: 0.5px inset gray;
+}
+
+.info ul li {
+    position: relative;
+}
+
+.info ul li::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.info ul li:hover::before {
+    width: 100%;
+}
+#avata {
+    object-fit: cover;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    border: 5px solid  red;
+    transform: translate(-15%,-50%);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.mtnnttcn {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    gap: 100px;
+}
+
+.mtnn {
+    flex: 50%;
+}
+
+.mtnn p {
+    text-align: justify;
+}
+
+.ttcn {
+    /* margin-left: 100px; */
+    flex: 50%;
+}
+
+.ttcn p {
+    text-align: justify;
+}
+
+.ttcn a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.lylich{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kinhnghiem, .kynang, .ngonngu, .hoatdong, .hocvan, .sothich {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 28%;
+    margin: 30px 30px 0px 5px;
+    padding: 5px;
+    border: 0.1px solid gray;
+    position: relative;
+}
+
+.lylich--icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.kinhnghiem, .hoatdong, .hocvan p {
+    font-size: 11px;
+    line-height: 1.5em;
+}
+
+.kynang, .ngonngu span{
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.kynang ul li, .ngonngu ul li{
+    list-style-type: none;
+    text-align: justify;
+    padding-top: 20px ;
+}
+
+.sothich table {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.sothich td {
+    padding-right: 5px;
+    text-align: center;
+}
+
+.kynang--btn--sucess{
+    width: 30px;
+    height: 3px;
+    color: blue;
+    background-color: blue;
+    border: blue;
+    margin-right: 5px;
+}
+
+.kynang--btn--unsucess{
+    width: 30px;
+    height: 3px;
+    color: gray;
+    background-color: gray;
+    border: gray;
+    margin-right: 5px;
+}
+
+.chungchi{
+    margin: 100px auto 0 auto;
+    background-color: azure;
+}
+
+.chungchi img {
+    width: 150px;   
+    height: 100px;
+}
+
+.chungchi span{
+    font-size: 11px;
+}
+
+.chungchi1 {
+    margin-top: 10px;
+    padding: 25px 10px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.chungchi2 {
+    margin-top: 10px 0 0 0;
+    border-left: 1px solid yellowgreen;
+    padding: 25px 10px;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.chungchi3 {
+    padding: 25px 10px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.project1, .project2, .project3 {
+    width: 28%;
+    margin: 30px 30px 0px 5px;
+    padding: 5px;
+    border: 0.1px solid gray; 
+    position: relative;
+}
+
+.project1 tr td, .project2 tr td, .project3 tr td, .pro1--info, .pro2--info, .pro3--info, .pro1--cv, .pro3--cv, .pro3--cv  {
+    vertical-align: middle;
+    font-size: 13px;
+    border-top: 0.5px solid gray ;
+    padding: 10px 5px ;
+}
+
+.pro1--info{
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .info ul li:hover::before {
+        width: 0;
+    }
+    .info li {
+        border: none;
+    }
+    .mtnnttcn {
+        margin-top: 30px;
+        display: block;
+    }
+    .ttcn {
+        margin-left: 0;
+    }
+    .kinhnghiem, .kynang, .ngonngu, .hoatdong, .hocvan, .sothich {
+        display: block;
+        width: 100%;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project1, .project2, .project3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .ttcn {
+        margin-left: 30px;
+    }
+    .kinhnghiem, .kynang, .ngonngu, .hoatdong, .hocvan, .sothich {
+        width: 42%;
+    }
+
+}
